@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusBus - Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <span>CampusBus</span>
+    <button id="logoutBtn" type="button">Logout</button>
+  </header>
+
+  <nav>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/trips-page">Available Trips</a>
+    <a href="/my-bookings">My Bookings</a>
+  </nav>
+
+  <main class="container">
+    <h1 id="welcome">Student Dashboard</h1>
+    <section class="stats">
+      <div class="stat"><span id="tripCount">0</span><small>Available trips</small></div>
+      <div class="stat"><span id="bookingCount">0</span><small>Confirmed bookings</small></div>
+      <div class="stat"><span id="waitingCount">0</span><small>Waiting entries</small></div>
+    </section>
+
+    <h2>Upcoming Trips</h2>
+    <div id="tripList" class="card-list"></div>
+  </main>
+
+  <script src="/static/auth.js"></script>
+</body>
+</html>

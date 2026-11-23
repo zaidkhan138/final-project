@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusBus - Available Trips</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <span>CampusBus</span>
+    <button id="logoutBtn" type="button">Logout</button>
+  </header>
+
+  <nav>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/trips-page">Available Trips</a>
+    <a href="/my-bookings">My Bookings</a>
+  </nav>
+
+  <main class="container">
+    <h1>Available Bus Trips</h1>
+    <!-- search bhi yahin pe hai -->
+    <input id="search" placeholder="Search route or date">
+    <p id="status"></p>
+    <div id="tripList" class="card-list"></div>
+  </main>
+
+  <script src="/static/auth.js"></script>
+</body>
+</html>

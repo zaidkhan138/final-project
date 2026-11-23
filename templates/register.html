@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusBus - Register</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="auth-box">
+    <h1>CampusBus</h1>
+    <h2>Student Registration</h2>
+    <form id="registerForm">
+      <label>Full name</label>
+      <input id="name" required>
+      <label>College email</label>
+      <input id="email" type="email" placeholder="name@college.edu" required>
+      <label>Password</label>
+      <input id="password" type="password" required>
+      <label>Confirm password</label>
+      <input id="confirmPassword" type="password" required>
+      <button type="submit">Register</button>
+    </form>
+    <p id="message" class="error"></p>
+    <p><a href="/">Back to login</a></p>
+  </main>
+  <script src="/static/auth.js"></script>
+</body>
+</html>
